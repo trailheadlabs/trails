@@ -245,6 +245,45 @@
     background-size: 100%;
     background-position: center 1px;
   }
+  .slack-webinar {
+    background-image: url(../images/slack-webinar.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .intertwine {
+    background-image: url(http://www.travelportland.com/wp-content/uploads/2013/09/forestjoggers.jpg);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .marin-osm {
+    background-image: url(../images/marin-osm.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .red-river-gorge {
+    background-image: url(../images/red-river-gorge.jpg);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .puppy2 {
+    background-image: url(https://pbs.twimg.com/media/B1kqLRcIcAA3kWA.jpg);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-position: center 1px;
+  }
 
 </style>
 <script src='../big.js'></script>
@@ -259,10 +298,12 @@
 <div><em>Before we start</em>, make sure you're signed in to <strong>Slack</strong>.</div>
 <div data-bodyclass='slack'></div>
 <div>This will be our <strong>main communications tool</strong> throughout the course. It <em>never sleeps</em>, so feel free to <strong>ask questions anytime</strong>.</div>
+<div><em>I know</em> that it's probably <strong>super annoying</strong> that you have <em>Slack</em> in one window and <strong>the webinar</strong> in another.</div>
+<div data-bodyclass='slack-webinar'><em>Potential solution?</em></div>
 <div>So, <em>why</em> are we here? What are our <strong>goals</strong>? What will we <em>accomplish</em>?</div>
 <div>1. We will <em>determine</em> and <em>understand</em> the <strong>current status</strong> of your agency's data in preparing to <a href='https://docs.google.com/document/d/1tZQRaHh76dP-t2_KhMR9zT2DktuOGwRjCAfvHU9_Tpg/'>publish in OpenTrails</a> sustainably.</div>
 <div>2. We will <em>understand</em> the OpenTrails specification, <strong>why</strong> it exists, and how <em>your data</em> can fit into it.</div>
-<div>3. We will <strong>convert your data</strong> to OpenTrails!</div>
+<div>3. We will <strong>help you convert your data</strong> to OpenTrails!</div>
 <div>4. We will determine <em>procedures</em> and <em>mechanisms</em> for <strong>maintaining</strong>, <strong>updating</strong>, <strong>stewarding</strong>, and <strong>sharing</strong> your OpenTrails data.</div>
 <div>5. We will <strong>learn</strong> and <strong>understand</strong> what you and others can <em>do with the data</em> once you have it in OpenTrails.</div>
 <div>6. We will work together to <em>build</em> an awesome community, <em>share data and techniques</em>, and give many <strong>high fives</strong>.</div>
@@ -284,6 +325,7 @@
 <div data-bodyclass='greensboro'><strong>Greensboro, North Carolina</strong><br><br><em>Madeleine Carey</em>, Assistant Trails & Greenways Director</div>
 <div data-bodyclass='guilford-county'><strong>Guilford County, North Carolina</strong><br><br><em>Thomas Marshburn</em>, Operations Manager<br><em>Katredia Martin</em>, County Administration</div>
 <div data-bodyclass='bay-area-ridge-trail'><strong>Bay Area Ridge Trail Council</strong><br><br><em>Bern Smith</em>, Trail Director</div>
+<div data-bodyclass='intertwine'><strong>Intertwine Alliance</strong><br><br><em>Kevin Le</em>, Projects and Office Manager</div>
 <div>Plus some <em>special love</em> for our <strong>awesome sponsors</strong>...</div>
 <div data-bodyclass='cfa'><br><br><br>codeforamerica.org</div>
 <div data-bodyclass='nrpa'><br><br><br>nrpa.org</div>
@@ -304,12 +346,8 @@
 <div data-bodyclass='biking-trails'><em>The aggregation of multiple datasets.</em></div>
 <div data-bodyclass='redwood-osm'><em>(Importing data into <a href='http://osm.org'>OpenStreetMap</a>.)</em></div>
 <div>The 30-second(ish) introduction to <strong>OpenStreetMap</strong>:</div>
-<div>a.k.a. the <em>Wikipedia of maps</em>.</div>
 <div>OSM is a <strong>community-supported</strong> project to <em>map the world</em>.</div>
-<div>More than <em>1.8 million users</em>.</div>
 <div data-bodyclass='craigslist'><strong>Many applications rely on it.</strong></div>
-<div>(Pretty <em>cool</em>, right?)</div>
-<div>(You can <a href='http://maptime.io/osm-101'>contribute</a> too!)</div>
 <div><em>OpenTrails</em> and <strong>OpenStreetMap</strong> are <em>BFFs</em>!</div>
 <div>Which <em>we will see</em> here in a minute as we <strong>walk through</strong>...</div>
 <div>The <strong>OpenTrails Specification</strong>!</div>
@@ -333,6 +371,7 @@
 <div>OpenTrails uses these formats to <strong>reach as many users as possible</strong> by providing data that is <em>easily interoperable</em>.</div>
 <div>The spec includes <em>five files</em>, but they're all <strong>connected</strong> to each other and <strong>rely</strong> on each other.</div>
 <div data-bodyclass='opentrails-model'></div>
+<div>Again, you can find <em>this info</em> and <strong>much more</strong> in the <a href='https://docs.google.com/document/d/1tZQRaHh76dP-t2_KhMR9zT2DktuOGwRjCAfvHU9_Tpg/edit#'>OpenTrails Guidebook</a>.</div>
 <div><em>Trail segments</em> are <strong>pieces of trail</strong> that, when <em>put together</em>, make up <strong>complete named trails</strong>.</div>
 <div>A <em>trail segment</em> contains the <strong>IDs of named trails</strong> of which it is a part (as there may be <em>multiple</em>) as well as the <strong>steward ID</strong> of its primary steward.</div>
 <div>It also contains <em>information</em> on the various <strong>physical characteristics</strong> of that section of trail.</div>
@@ -351,7 +390,7 @@
 <div><em>OpenTrails</em> contains the attributes that are <strong>most relevant</strong> for park visitors, as determined by <em>lengthy research</em>.</div>
 <div>And <strong>remember</strong> how I said that <em>OpenTrails</em> and <em>OSM</em> were <strong>BFFs</strong>?</div>
 <div>The <em>attributes</em> in the data relate <strong>directly</strong> to <em>attributes</em> in <strong>OSM</strong>!</div>
-<div>It's <em>pretty neat</em>.</div>
+<div data-bodyclass='marin-osm'>It's <em>pretty neat</em>.</div>
 <div><strong>That said</strong>, please <em>let us know</em> about attributes you'd like to see.</div>
 <div><strong>SECOND:</strong> OpenTrails is <em>not meant</em> to replace your <strong>existing trail data management</strong> (although, feel free).</div>
 <div>This specification is meant to <em>aid in publishing useful data</em>, so it can exist <strong>entirely outside</strong> your existing workflow.</div>
@@ -363,6 +402,14 @@
 <div>We'll <em>talk more</em> about that in the <strong>coming weeks</strong>!</div>
 <div><strong>In the meantime,</strong> be sure to check out <a href='http://opentraildata.org'>opentraildata.org</a> to <em>learn more</em> about the <strong>awesome stuff</strong> you can do with <em>OpenTrails</em>.</div>
 <div>(Oh and <strong>I guess</strong> get to know the <em>specification</em> better. <strong>:-P</strong>)</div>
+<div><em>Next week</em> we will talk about <strong>converting your data</strong> to <em>OpenTrails</em>, <strong>maintaining</strong> your data in <em>OpenTrails</em>, and <strong>building internal community</strong> around publishing in <em>OpenTrails</em>.</div>
+<div><strong>Your homework:</strong></div>
+<div>If you have not yet, please <em>send us your trail data</em> as it exists now.</div>
+<div>We will <strong>conduct an assessment</strong> and let you know <em>what you need to do next</em> to prepare your data for <strong>OpenTrails</strong>.</div>
+<div>Also, <em>if you haven't yet</em>, please fill out our <a href='https://docs.google.com/forms/d/1nOub07zHJNnTEpevFH_AgMIPqAeSikzTshIQQrq4gHQ/viewform'>questionnaire</a> as soon as you can!</div>
+<div>Finally, be sure to take a read through the <a href='https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/'>OpenTrails Specification</a> and the <a href='https://docs.google.com/document/d/1tZQRaHh76dP-t2_KhMR9zT2DktuOGwRjCAfvHU9_Tpg/'>OpenTrails Guidebook</a>.</div>
+<div data-bodyclass='puppy2'><br><br><br><br><br>Also, look at this cute puppy.</div>
+<div data-bodyclass='red-river-gorge'><strong>Questions?</strong></div>
 
 
 <script>
