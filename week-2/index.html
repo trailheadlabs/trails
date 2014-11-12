@@ -201,6 +201,62 @@
     background-size: 100%;
     background-position: center 1px;
   }
+  .converter1 {
+    background-image: url(../images/converter1.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .converter2 {
+    background-image: url(../images/converter2.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .converter-error {
+    background-image: url(../images/converter-error.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .trailheads-gj {
+    background-image: url(../images/trailheads-gj.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .stewards-csv {
+    background-image: url(../images/stewards-csv.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .named-trails-csv {
+    background-image: url(../images/named-trails-csv.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .trail-segments-gj {
+    background-image: url(../images/trail-segments-gj.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
   .sibley {
     background-image: url(../images/sibley.JPG);
     background-repeat: no-repeat;
@@ -263,6 +319,9 @@
 <div>And <strong>traditional methods</strong>, like adding the trailheads <em>manually</em> to your GIS or <strong>collecting points</strong> with a <em>GPS unit</em>.</div>
 <div><strong>Again</strong>, <em>trailhead</em> data is <strong>very important</strong> for trailgoers.</div>
 <div data-bodyclass='pano'>SECOND: Determing a <strong>system</strong> for giving each feature a <em>unique ID</em> that <strong>perpetuates</strong> across datasets.</div>
+<div><strong>IMPORTANT:</strong> <em>perpetuate</em> means the id will remain the <strong>same</strong> for the <em>lifetime</em> of the feature.</div>
+<div>This becomes <strong>important in the future</strong> when you are <em>updating features</em>. A <strong>perpetual ID</strong> means that you can <em>always</em> reference that feature <strong>specifically</strong>.</div>
+<div><em>Plus</em>, if you're using a tool like <a href='http://outerspatial.com'>OuterSpatial</a> you can use that <strong>perpetual ID</strong> to tie <em>other data</em> to that feature, like <strong>tweets</strong> and <strong>photos</strong>.
 <div>Although there is no <em>canonical system</em> for this, the <a href='https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/edit#bookmark=id.ukk6kpfl3ej8'>OpenTrails Specification</a> has a suggested <strong>method</strong>:</div>
 <div><em>[the 'url' field from the corresponding steward in stewards.csv]</em> + <strong>[feature type]</strong> + <em>[name of individual feature]</em></div>
 <div><strong>Examples include:</strong><br><br><ul><li>"http://countyparkdistrict.gov/stewards/0"</li><li>"http://countyparkdistrict.gov/trail_segments/31-pinetrail"</li><li>"http://countyparkdistrict.gov/named_trails/5"</li><li>"http://countyparkdistrict.gov/trailheads/wicker_trailhead"</li><li>"http://countyparkdistrict.gov/areas/sandrun"</li></ul></div>
@@ -316,6 +375,16 @@
 <div><em>This option</em> is for datasets with schemas that are <strong>pretty close</strong> to compatible.</div>
 <div>We will <em>let you know</em> if this option is best for you.</div>
 <div>Once your <strong>data is ready</strong>, you can start to <em>feed it</em> through the converter!</div>
+<div data-bodyclass='converter1'></div>
+<div data-bodyclass='converter2'></div>
+<div data-bodyclass='converter-error'></div>
+<div>The reason we're doing <strong>so much preparation</strong> for the converter is to <em>avoid</em> situations like <strong>this one</strong>.</div>
+<div>If we are <strong>successful</strong>, then the <em>resulting files</em> look like this:</div>
+<div data-bodyclass='trailheads-gj'>trailheads.geojson</div>
+<div data-bodyclass='stewards-csv'>stewards.csv</div>
+<div data-bodyclass='named-trails-csv'>named_trails.csv</div>
+<div data-bodyclass='trail-segments-gj'>trail_segments.geojson</div>
+
 
 
 
