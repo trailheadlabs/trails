@@ -1,0 +1,269 @@
+<!DOCTYPE html><html><head><title>Web-Mapping Quickstart: Session 1</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link href='../big.css' rel='stylesheet' type='text/css' />
+<style>
+  .point-bonita {
+    background-image: url(../images/point-bonita.JPG);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-shadow: 0.1em 0.1em #000;
+  }
+  .red-river-gorge1 {
+    background-image: url(../images/red-river-gorge1.JPG);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .laurel-ridge {
+    background-image: url(../images/laurel-ridge.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .tillamook-rail {
+    background-image: url(../images/tillamook-rail.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .seaview {
+    background-image: url(../images/seaview.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .macleay {
+    background-image: url(../images/macleay.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .macleay2 {
+    background-image: url(../images/macleay2.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .pano {
+    background-image: url(../images/pano.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .outerspatial-boulder {
+    background-image: url(../images/outerspatial-boulder.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .traileditor {
+    background-image: url(../images/traileditor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 0.3em 0.3em #000;
+    background-size: 100%;
+    background-position: center 1px;
+  }
+  .serif {
+    font-family: serif;
+    font-style: italic;
+  }
+
+</style>
+<script src='../big.js'></script>
+</head><body>
+<div data-bodyclass='point-bonita'>OpenTrails Course: Week 2</div>
+<div><em>Thanks</em> for joining us today!</div>
+<div><strong>Say hi</strong> to everyone on <em>Slack</em>. :)</div>
+<div>Let's do a <strong>quick recap</strong> of our <em>goals</em> for this course.</div>
+<div>1. We will <em>determine</em> and <em>understand</em> the <strong>current status</strong> of your agency's data in preparing to <a href='https://docs.google.com/document/d/1tZQRaHh76dP-t2_KhMR9zT2DktuOGwRjCAfvHU9_Tpg/'>publish in OpenTrails</a> sustainably.</div>
+<div>2. We will <em>understand</em> the OpenTrails specification, <strong>why</strong> it exists, and how <em>your data</em> can fit into it.</div>
+<div>3. We will <strong>help you convert your data</strong> to OpenTrails!</div>
+<div>4. We will determine <em>procedures</em> and <em>mechanisms</em> for <strong>maintaining</strong>, <strong>updating</strong>, <strong>stewarding</strong>, and <strong>sharing</strong> your OpenTrails data.</div>
+<div>5. We will <strong>learn</strong> and <strong>understand</strong> what you and others can <em>do with the data</em> once you have it in OpenTrails.</div>
+<div>6. We will work together to <em>build</em> an awesome community, <em>share data and techniques</em>, and give many <strong>high fives</strong>.</div>
+<div data-bodyclass='red-river-gorge1'>So far:</div>
+<div>1. We are working to <em>determine</em> and <em>understand</em> the <strong>current status</strong> of your agency's data in preparing to <a href='https://docs.google.com/document/d/1tZQRaHh76dP-t2_KhMR9zT2DktuOGwRjCAfvHU9_Tpg/'>publish in OpenTrails</a> sustainably.</div>
+<div>2. We worked to <em>understand</em> the OpenTrails specification, <strong>why</strong> it exists, and how <em>your data</em> can fit into it.</div>
+<div data-bodyclass='laurel-ridge'>Today:</div>
+<div>3. We will <strong>help you convert your data</strong> to OpenTrails!</div>
+<div>4. We will determine <em>procedures</em> and <em>mechanisms</em> for <strong>maintaining</strong>, <strong>updating</strong>, <strong>stewarding</strong>, and <strong>sharing</strong> your OpenTrails data.</div>
+<div data-bodyclass='tillamook-rail'>Next week:</div>
+<div>5. We will <strong>learn</strong> and <strong>understand</strong> what you and others can <em>do with the data</em> once you have it in OpenTrails.</div>
+<div>6. We will work together to <em>build</em> an awesome community, <em>share data and techniques</em>, and give many <strong>high fives</strong>.</div>
+<div data-bodyclass='seaview'>Sound good?</div>
+<div><strong>Awesome!</strong></div>
+<div>A <em>huge thanks</em> to everyone who sent us their <strong>trail data</strong>.</div>
+<div>(If you <em>haven't yet</em>, please <strong>send us your data</strong> ASAP! Let us know if you need <em>help</em>.)</div>
+<div>Over the past week, we've been <strong>looking over your data</strong> to determine <em>what needs to be changed or added</em> before <strong>converting to OpenTrails</strong>.</div>
+<div>What makes trail data <strong>OpenTrails-ready</strong>?</div>
+<div><strong>As you know</strong> from reading over the <a href='https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/'>OpenTrails Specification</a>, there are <em>certain fields</em> that are <strong>required</strong> as part of the spec.</div>
+<div>For <em>each agency's data</em>, we are looking to answer <strong>a few questions</strong>:</div>
+<div data-bodyclass='serif'>Is there both a <strong>trailheads</strong> dataset and a <em>trail segments</em> dataset? How <strong>complete</strong> are these datasets?</div>
+<div data-bodyclass='serif'>Are these datasets in <strong>shapefile</strong> format?</div>
+<div data-bodyclass='serif'>Does each <em>trail segment</em> or <em>trailhead</em> have a <strong>unique ID field</strong>?</div>
+<div data-bodyclass='serif'>Is the <em>naming convention</em> for that <strong>unique ID field</strong> <em>consistent</em> among the datasets?</div>
+<div data-bodyclass='serif'>Do the files have the <strong>required usage attributes</strong> as defined in the <em>specification</em>? Are those attributes <strong>correctly formatted</strong>?</div>
+<div data-bodyclass='serif'>Is each <em>trail segment</em> and <em>trailhead</em> associated with a <strong>single steward</strong>?</div>
+<div data-bodyclass='macleay'>Based on a <em>cursory assessment</em> of the <strong>submitted data</strong>, most of you are <em>almost</em> ready to convert!</div>
+<div>But, quickly, we are going to go over some <em>common hurdles</em> we need to clear before we can all <strong>convert our data</strong>.</div>
+<div><em>Keep in mind</em> that <strong>your agency</strong> will receive a <em>personalized assessment and instructions</em> for moving forward. This is just a <strong>general overview</strong>.</div>
+<div data-bodyclass='macleay2'>FIRST: <em>Collecting</em> and <em>maintaining</em> accurate <strong>trailhead data</strong>.</div>
+<div><strong>Trailheads</strong> are included in the <em>OpenTrails Specification</em> because they serve as <strong>points of entry</strong> to the <em>trail network</em>.</div>
+<div data-bodyclass='outerspatial-boulder'></div>
+<div>They also show <em>amenities available</em> at those locations, which is <strong>helpful information</strong> for trailgoers!</div>
+<div>But <em>how</em> can we <strong>collect</strong> this data? There are <em>a few</em> different ways.</div>
+<div data-bodyclass='traileditor'><br><br><br><br><br><br><br><br><br><br><a href='http://traileditor.org'>traileditor.org</a></div>
+<div data-bodyclass='outerspatial-boulder'><br><br><br><br><br><br><br><br><br><br><a href='http://outerspatial.com'>outerspatial.com</a></div>
+<div>And <strong>traditional methods</strong>, like adding the trailheads <em>manually</em> to your GIS or <strong>collecting points</strong> with a <em>GPS unit</em>.</div>
+<div><strong>Again</strong>, <em>trailhead</em> data is <strong>very important</strong> for trailgoers.</div>
+<div data-bodyclass='pano'>SECOND: Determing a <strong>system</strong> for giving each feature a <em>unique ID</em> that <strong>perpetuates</strong> across datasets.</div>
+<div>Although there is no <em>canonical system</em> for this, the <a href='https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/edit#bookmark=id.ukk6kpfl3ej8'>OpenTrails Specification</a> has a suggested <strong>method</strong>:</div>
+<div><em>[the 'url' field from the corresponding steward in stewards.csv]</em> + <strong>[feature type]</strong> + <em>[name of individual feature]</em></div>
+<div>Examples include:<br><br><ul><li>"http://countyparkdistrict.gov/stewards/0"</li><li>"http://countyparkdistrict.gov/trail_segments/31-pinetrail"</li><li>"http://countyparkdistrict.gov/named_trails/5"</li><li>"http://countyparkdistrict.gov/trailheads/wicker_trailhead"</li><li>"http://countyparkdistrict.gov/areas/sandrun"</li></ul></div>
+
+
+
+
+
+<div>Let's do some <em>introductions</em>.</div>
+<div data-bodyclass='kitty'><br><br><br><br>Lyzi Diamond<br>Course Facilitator<br><a href='mailto:lyzi@trailheadlabs.com'>lyzi@trailheadlabs.com</a><br><a href='http://twitter.com/lyzidiamond'>@lyzidiamond</a></div>
+<div data-bodyclass='lyzi'><br><br><br><br>Lyzi Diamond<br>Course Facilitator<br><a href='mailto:lyzi@trailheadlabs.com'>lyzi@trailheadlabs.com</a><br><a href='http://twitter.com/lyzidiamond'>@lyzidiamond</a></div>
+<div data-bodyclass='ryan'><br><br><br><br>Ryan Branciforte<br>CEO, <a href='http://trailheadlabs.com'>Trailhead Labs</a><br><a href='mailto:ryan@trailheadlabs.com'>ryan@trailheadlabs.com</a><br><a href='http://twitter.com/ryanbranciforte'>@ryanbranciforte</a></div>
+<div data-bodyclass='jereme'><br><br><br><br>Jereme Monteau<br>CTO, <a href='http://trailheadlabs.com'>Trailhead Labs</a><br><a href='mailto:jereme@trailheadlabs.com'>jereme@trailheadlabs.com</a><br><a href='http://twitter.com/jerememonteau'>@jerememonteau</a></div>
+<div data-bodyclass='alan'><br><br><br><br>Alan Williams<br>OpenTrails Spirit Guide<br><a href='mailto:alanw@codeforamerica.org'>alanw@codeforamerica.org</a><br><a href='http://twitter.com/alanjosephwilli'>@alanjosephwilli</a></div>
+<div>But this course is about <strong>you</strong>!</div>
+<div>Let's play <em>get to know our course-mates</em>.</div>
+<div data-bodyclass='sonoma-county'><strong>Sonoma County Regional Parks</strong><br><br><em>Steve Ehret</em>, Park Planner<br><em>Mary Clemens</em>, Program Manager<br><em>Meda Freeman</em>, Communications Manager<br><em>Adam Sharron</em>, Park Planning Technician</div>
+<div data-bodyclass='wisconsin-rapids'><strong>Wisconsin Rapids, Wisconsin</strong><br><br><em>Chris Cantey</em>, GIS Specialist</div>
+<div data-bodyclass='wood-county'><strong>Wood County, Wisconsin</strong><br><br><em>Justin Conner</em>, Land Records Coordinator</div>
+<div data-bodyclass='marin-county'><strong>Marin County, California</strong><br><br><em>Matt Sagues</em>, Senior Natural Resource Planner, Marin County Parks<br><em>Nick Salcedo</em>, System/GIS Analyst</div>
+<div data-bodyclass='chico'><strong>Chico, California</strong><br><br><em>Emilyn Sheffield</em>, Professor, Department of Recreation and Parks Management, CSU Chico</div>
+<div data-bodyclass='greensboro'><strong>Greensboro, North Carolina</strong><br><br><em>Madeleine Carey</em>, Assistant Trails & Greenways Director</div>
+<div data-bodyclass='guilford-county'><strong>Guilford County, North Carolina</strong><br><br><em>Thomas Marshburn</em>, Operations Manager<br><em>Katredia Martin</em>, County Administration</div>
+<div data-bodyclass='bay-area-ridge-trail'><strong>Bay Area Ridge Trail Council</strong><br><br><em>Bern Smith</em>, Trail Director</div>
+<div data-bodyclass='intertwine1'><strong>Intertwine Alliance</strong><br><br><em>Kevin Le</em>, Projects and Office Manager</div>
+<div>Plus some <em>special love</em> for our <strong>awesome sponsors</strong>...</div>
+<div data-bodyclass='cfa'><br><br><br>codeforamerica.org</div>
+<div data-bodyclass='nrpa'><br><br><br>nrpa.org</div>
+<div>PS... are you on <em>Slack</em> yet? <strong>;)</strong></div>
+<div>Alright. <strong>Here we go.</strong></div>
+<div>The <em>History</em> of <strong>OpenTrails</strong>!</div>
+<div><strong>A lot</strong> of information about the <em>history of OpenTrails</em> can be found in the <a href='https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/edit'>OpenTrails Specification</a> and the <a href='https://docs.google.com/document/d/1tZQRaHh76dP-t2_KhMR9zT2DktuOGwRjCAfvHU9_Tpg/'>OpenTrails Guidebook</a>.</div>
+<div><strong>Why</strong> was the <em>OpenTrails Specification</em> created?</div>
+<div><strong>How</strong> did we get to this point?</div>
+<div><strong>Where</strong> are we today?</div>
+<div>A <em>common data format</em> to enable <strong>governments</strong> to build <em>beautiful and useful web maps</em>.</div>
+<div>Built with <strong>guidance</strong> from an <em>amazing community</em>.</div>
+<div data-bodyclass='teton'><strong>Esri, National Recreation and Park Association, The Trust for Public Land, Stamen, Strava, AllTrails, Trailhead Labs, GreenInfo Network, US Protected Lands Database, Code for America, OpenStreetMap-US Board, NPS & Forest Service Staff</strong></div>
+<div><em>OpenTrails</em> is <strong>designed for</strong>:</div>
+<div data-bodyclass='intertwine'><em>Creating maps for visitors.</em></div>
+<div data-bodyclass='santa-rosa'><em>Government and steward publishers.</em></div>
+<div data-bodyclass='outerspatial'><em>Use in web and mobile apps.</em></div>
+<div data-bodyclass='biking-trails'><em>The aggregation of multiple datasets.</em></div>
+<div data-bodyclass='redwood-osm'><em>(Importing data into <a href='http://osm.org'>OpenStreetMap</a>.)</em></div>
+<div>The 30-second(ish) introduction to <strong>OpenStreetMap</strong>:</div>
+<div>OSM is a <strong>community-supported</strong> project to <em>map the world</em>.</div>
+<div data-bodyclass='craigslist'><strong>Many applications rely on it.</strong></div>
+<div><em>OpenTrails</em> and <strong>OpenStreetMap</strong> are <em>BFFs</em>!</div>
+<div>Which <em>we will see</em> here in a minute as we <strong>walk through</strong>...</div>
+<div>The <strong>OpenTrails Specification</strong>!</div>
+<div>Again, the <em>goal</em> of the specification is to <strong>maintain and provide data</strong> in service to <em>visitors</em> and <em>trailgoers</em>. The spec was made with <strong>this in mind</strong>.</div>
+<div>The spec contains <em>five different datasets</em>:</div>
+<div data-bodyclass='hood-river'><strong>stewards.csv:</strong> organizations that serve as the primary point of contact for inquiries about trails and trailheads</div>
+<div data-bodyclass='ice-lake'><strong>trail_segments.geojson:</strong> physical segments of trails; typically multiple segments will make up a named trail <em>(line features)</em></div>
+<div data-bodyclass='high-uintas'><strong>named_trails.csv:</strong> named trails as defined by park agencies</div>
+<div data-bodyclass='damfino'><strong>trailheads.geojson:</strong> points of access for trailgoers <em>(point features)</em></div>
+<div data-bodyclass='poboktan-creek'><strong>areas.geojson</strong> parks and other protected lands <em>(polygon features)</em></div>
+<div>Notice that these are <strong>CSV</strong> and <strong>GeoJSON</strong> files.</div>
+<div>What is <a href='http://github.com/lyzidiamond/learn-geojson'>GeoJSON</a>?</div>
+<div><em>GeoJSON</em> is a <strong>geographic data format</strong>.</div>
+<div>It is an extension of <strong>JSON</strong>, which stands for <em>JavaScript Object Notation</em>.</div>
+<div>This means that <strong>websites</strong> and <strong>web applications</strong> can <em>read it easily</em>.</div>
+<div>GeoJSON has its <a href="http://geojson.org">own specification</a> for what must be included.</div>
+<div><strong>Fortunately</strong>, there are many <em>awesome tools</em> for getting our spatial data into <strong>GeoJSON</strong>.</div>
+<div><em>CSV</em> stands for <strong>comma-separated values</strong>.</div>
+<div>Similar to <em>GeoJSON</em>, we can <strong>export</strong> our data to <em>CSV</em> fairly <strong>easily</strong>.</div>
+<div><strong>GeoJSON</strong> and <strong>CSV</strong> are <em>very popular</em> in the web and open data space.</div>
+<div>OpenTrails uses these formats to <strong>reach as many users as possible</strong> by providing data that is <em>easily interoperable</em>.</div>
+<div>The spec includes <em>five files</em>, but they're all <strong>connected</strong> to each other and <strong>rely</strong> on each other.</div>
+<div data-bodyclass='opentrails-model'></div>
+<div>Again, you can find <em>this info</em> and <strong>much more</strong> in the <a href='https://docs.google.com/document/d/1tZQRaHh76dP-t2_KhMR9zT2DktuOGwRjCAfvHU9_Tpg/edit#'>OpenTrails Guidebook</a>.</div>
+<div><em>Trail segments</em> are <strong>pieces of trail</strong> that, when <em>put together</em>, make up <strong>complete named trails</strong>.</div>
+<div>A <em>trail segment</em> contains the <strong>IDs of named trails</strong> of which it is a part (as there may be <em>multiple</em>) as well as the <strong>steward ID</strong> of its primary steward.</div>
+<div>It also contains <em>information</em> on the various <strong>physical characteristics</strong> of that section of trail.</div>
+<div>There may be <em>multiple</em> agencies that are responsible for parts of trail, but the <strong>specification</strong> asks for the <em>primary</em> steward.</div>
+<div><em>Named trails</em> is a <strong>non-spatial file</strong> that contains a list of trails.</div>
+<div>A <em>named trail</em> contains the <strong>trail segments</strong> that, when <em>put together</em>, make up the trail, as well as a <strong>list</strong> of any other <em>larger trails</em> of which it may be a part.</div>
+<div>It also contains the <strong>steward ID</strong> of its primary steward.</div>
+<div><em>Trailheads</em> mark the <strong>points of access</strong> for trails.</div>
+<div>A <em>trailhead</em> contains:<ul><li>the <strong>IDs of trail segments</strong> to which it has access</li><li>a <em>list of named trails</em> to which it has access</li><li>the <strong>area</strong> in which it's located</li><li>the <strong>steward ID</strong> of its primary steward</li></ul></div>
+<div><em>Stewards</em> contains a list of <strong>names</strong> and <strong>contact information</strong> for any <em>trail stewarding agency</em> in your area.</div>
+<div><strong>EVERYTHING</strong> relates back to a <em>steward</em>.</div>
+<div><em>Areas (optional)</em> refer to <strong>parks</strong> or <strong>protected lands</strong>.</div>
+<div data-bodyclass='puppy'><br><br><br><br>Phew! Here are some puppies.</div>
+<div>Some <em>quick notes</em> on the specification:</div>
+<div><strong>FIRST:</strong> The <em>built-in</em> options for <strong>attributes</strong> are <em>limited</em>.</div>
+<div><em>OpenTrails</em> contains the attributes that are <strong>most relevant</strong> for park visitors, as determined by <em>lengthy research</em>.</div>
+<div>And <strong>remember</strong> how I said that <em>OpenTrails</em> and <em>OSM</em> were <strong>BFFs</strong>?</div>
+<div>The <em>attributes</em> in the data relate <strong>directly</strong> to <em>attributes</em> in <strong>OSM</strong>!</div>
+<div data-bodyclass='marin-osm'>It's <em>pretty neat</em>.</div>
+<div><strong>That said</strong>, please <em>let us know</em> about attributes you'd like to see.</div>
+<div><strong>SECOND:</strong> OpenTrails is <em>not meant</em> to replace your <strong>existing trail data management</strong> (although, feel free).</div>
+<div>This specification is meant to <em>aid in publishing useful data</em>, so it can exist <strong>entirely outside</strong> your existing workflow.</div>
+<div>But this is <strong>totally up to you</strong>.</div>
+<div><strong>THIRD:</strong> You will <em>maintain control</em> of your <strong>authoritative data</strong>.</div>
+<div><em>You</em> are the one who gets to say what is <strong>legitimate</strong> data.</div>
+<div><em>You are the deciders!</em></div>
+<div><strong>FOURTH:</strong> Publishing data this way means you get to <em>make and use really cool stuff</em>.</div>
+<div>We'll <em>talk more</em> about that in the <strong>coming weeks</strong>!</div>
+<div><strong>In the meantime,</strong> be sure to check out <a href='http://opentraildata.org'>opentraildata.org</a> to <em>learn more</em> about the <strong>awesome stuff</strong> you can do with <em>OpenTrails</em>.</div>
+<div>(Oh and <strong>I guess</strong> get to know the <em>specification</em> better. <strong>:-P</strong>)</div>
+<div><em>Next week</em> we will talk about <strong>converting your data</strong> to <em>OpenTrails</em>, <strong>maintaining</strong> your data in <em>OpenTrails</em>, and <strong>building internal community</strong> around publishing in <em>OpenTrails</em>.</div>
+<div><strong>Your homework:</strong></div>
+<div>If you have not yet, please <em>send us your trail data</em> as it exists now.</div>
+<div>We will <strong>conduct an assessment</strong> and let you know <em>what you need to do next</em> to prepare your data for <strong>OpenTrails</strong>.</div>
+<div>Also, <em>if you haven't yet</em>, please fill out our <a href='https://docs.google.com/forms/d/1nOub07zHJNnTEpevFH_AgMIPqAeSikzTshIQQrq4gHQ/viewform'>questionnaire</a> as soon as you can!</div>
+<div>Finally, be sure to take a read through the <a href='https://docs.google.com/a/codeforamerica.org/document/d/1KF8KAio-SqGHhh9oFY_KjfwIi3PePOHg7KfTSPh27fc/'>OpenTrails Specification</a> and the <a href='https://docs.google.com/document/d/1tZQRaHh76dP-t2_KhMR9zT2DktuOGwRjCAfvHU9_Tpg/'>OpenTrails Guidebook</a>.</div>
+<div data-bodyclass='puppy2'><br><br><br><br><br>Also, look at this cute puppy.</div>
+<div data-bodyclass='red-river-gorge'><strong>Questions?</strong></div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47757349-1', 'lyzidiamond.com');
+  ga('send', 'pageview');
+
+</script>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
